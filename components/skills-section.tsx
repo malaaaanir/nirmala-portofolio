@@ -7,19 +7,23 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Users, Clock, MessageSquare, Lightbulb, Crown } from "lucide-react"
 
 export function SkillsSection() {
-  const [activeTab, setActiveTab] = useState("technical")
+  const [activeTab, setActiveTab] = useState("programming")
 
-  const technicalSkills = [
+  const programmingSkills = [
     { name: "JavaScript", icon: "🟨" },
-    { name: "React JS", icon: "⚛️" },
     { name: "PHP", icon: "🐘" },
+    { name: "HTML/CSS", icon: "📝" },
+    { name: "React JS", icon: "⚛️" },
     { name: "Laravel", icon: "🔴" },
     { name: "MySQL", icon: "🗄️" },
-    { name: "HTML/CSS", icon: "📝" },
+  ]
+
+  const toolsSkills = [
+    { name: "Visual Studio Code", icon: "💻" },
+    { name: "Git", icon: "📊" },
     { name: "Bootstrap", icon: "🅱️" },
     { name: "Tailwind CSS", icon: "🌊" },
-    { name: "Git", icon: "📊" },
-    { name: "VS Code", icon: "💻" },
+    { name: "Microsoft Office", icon: "📊" },
   ]
 
   const softSkills = [
@@ -41,22 +45,40 @@ export function SkillsSection() {
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-            <TabsTrigger value="technical" className="text-lg">
-              Technical Skills
+          <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 mb-8">
+            <TabsTrigger value="programming" className="text-sm">
+              Programming
             </TabsTrigger>
-            <TabsTrigger value="soft" className="text-lg">
+            <TabsTrigger value="tools" className="text-sm">
+              Tools
+            </TabsTrigger>
+            <TabsTrigger value="soft" className="text-sm">
               Soft Skills
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="technical">
+          <TabsContent value="programming">
             <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-              {technicalSkills.map((skill, index) => (
+              {programmingSkills.map((skill, index) => (
                 <Badge
                   key={skill.name}
                   variant="secondary"
                   className="px-4 py-2 text-sm font-medium bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 cursor-default"
+                >
+                  <span className="mr-2">{skill.icon}</span>
+                  {skill.name}
+                </Badge>
+              ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="tools">
+            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+              {toolsSkills.map((skill, index) => (
+                <Badge
+                  key={skill.name}
+                  variant="secondary"
+                  className="px-4 py-2 text-sm font-medium bg-white border border-gray-200 hover:border-green-300 hover:bg-green-50 transition-all duration-200 cursor-default"
                 >
                   <span className="mr-2">{skill.icon}</span>
                   {skill.name}
