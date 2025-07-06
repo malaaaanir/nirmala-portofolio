@@ -2,9 +2,13 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
+  title: 'Nirmala Portfolio',
   description: 'Created with v0',
   generator: 'v0.dev',
+  icons: {
+    icon: '/logo-n.png', // Untuk favicon standar
+    apple: '/logo-n.png', // Untuk Apple devices
+  },
 }
 
 export default function RootLayout({
