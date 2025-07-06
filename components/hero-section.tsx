@@ -40,8 +40,8 @@ export function HeroSection() {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-red-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
@@ -49,13 +49,13 @@ export function HeroSection() {
         <div className="space-y-6">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
             <span className="block text-gray-900">Hi, I'm</span>
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
               Nirmala
             </span>
           </h1>
 
           <div className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-600 h-10">
-            <span className="inline-block min-w-[300px] text-left">
+            <span className="inline-block min-w-[300px] text-center">
               {displayText}
               <span className="animate-pulse">|</span>
             </span>
@@ -69,18 +69,17 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg rounded-full"
+              className="bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full"
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
             >
-              View My Work
+              View My Project
               <ChevronDown className="ml-2 h-5 w-5" />
             </Button>
 
             <Button
-              variant="outline"
-              size="lg"
+              variant="outline"size="lg"
               className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 text-lg rounded-full bg-transparent"
-            >
+              onClick={() => window.open("https://drive.google.com/file/d/1c-lHEs1kzrb7NjrLUI5dZchEQYM5goKZ/view?usp=sharing", "_blank")}>
               Download CV
               <Download className="ml-2 h-5 w-5" />
             </Button>

@@ -15,14 +15,14 @@ export function SkillsSection() {
     { name: "HTML/CSS", icon: "📝" },
     { name: "React JS", icon: "⚛️" },
     { name: "Laravel", icon: "🔴" },
+    { name: "Bootstrap", icon: "🅱️" },
+    { name: "Tailwind CSS", icon: "🌊" },
     { name: "MySQL", icon: "🗄️" },
   ]
 
   const toolsSkills = [
     { name: "Visual Studio Code", icon: "💻" },
     { name: "Git", icon: "📊" },
-    { name: "Bootstrap", icon: "🅱️" },
-    { name: "Tailwind CSS", icon: "🌊" },
     { name: "Microsoft Office", icon: "📊" },
   ]
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Award, BookOpen, Trophy, Users } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
@@ -17,27 +17,29 @@ export function AchievementsSection() {
       items: [
         {
           title: "PKM-PM Funding Recipient",
-          description: "Received funding for the Program Kreativitas Mahasiswa (PKM) program",
+          detail:
+            "Click me for documentation",
+          description: "Received funding for the Program Kreativitas Mahasiswa (PKM) program.",
           year: "2023",
           type: "Funding",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/image1-pkm.png?height=200&width=300",
+            "/documentation-images/image3-pkm.png?height=200&width=300",
+            "/documentation-images/image2-buktipkm.png?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1bddGpKyde66CUHFu2e2tcsp42vNsixXr/view?usp=sharing",
         },
         {
           title: "6th Place - Youth Sharia Sociopreneurship Competition",
-          description: "Recognized for innovative sharia-based business solutions",
+          detail:
+            "Click me for documentation",
+          description: "Recognized for innovative sharia-based business solutions.",
           year: "2023",
           type: "Competition",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/YSSC.jpg?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1W4uH9mkBOLvnak5dk4OEh6d2uz78KD5C/view?usp=sharing",
         },
       ],
     },
@@ -48,39 +50,46 @@ export function AchievementsSection() {
         {
           title: "IMCOM 2024 - Flower Classification Research",
           description:
-            "Unveiling Algorithm Classification Excellence: Exploring Calendula and Coreopsis Flower Datasets",
+            "Unveiling Algorithm Classification Excellence: Exploring Calendula and Coreopsis Flower Datasets.",
+          detail:
+            "Click me for documentation",
           year: "2024",
           type: "International Conference",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/imcom24-1.png?height=200&width=300",
+            "/documentation-images/imcom24-2.png?height=200&width=300",
+            "/documentation-images/imcom24-3.jpg?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1gumWHmZdLL9hR5U7by5hTb2M_36s7-Z5/view?usp=sharing",
+          publication: "https://drive.google.com/file/d/1gumWHmZdLL9hR5U7by5hTb2M_36s7-Z5/view?usp=sharing",
         },
         {
           title: "EiConCIT 2024 - Conference Presentation",
-          description: "6th East Indonesia Conference on Computer and Information Technology",
+          detail:
+            "Click me for documentation",
+          description: "6th East Indonesia Conference on Computer and Information Technology.",
           year: "2024",
           type: "National Conference",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/eiconcit1.JPG?height=200&width=300",
+            "/documentation-images/eiconcit2.png?height=200&width=300",
+            "/documentation-images/eiconcit3.jpg?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1nL1ase_6AL5oSl0PQrshkOU_pgZmWdTl/view?usp=sharing",
         },
         {
           title: "IMCOM 2025 - ResNet-50 Research",
-          description: "ResNet-50 for Flower Image Classification: A Comparative Study",
+          detail:
+            "Click me for documentation",
+          description: "ResNet-50 for Flower Image Classification: A Comparative Study.",
           year: "2025",
           type: "International Conference",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/IMCOM25-2.JPG?height=200&width=300", 
+            "/documentation-images/IMCOM25-1.JPG?height=200&width=300",
+            "/documentation-images/IMCOM2025-3.jpg?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1dU2KHF0N6QyNommCRkzD3gM8w7iKcHf8/view?usp=sharing",
         },
       ],
     },
@@ -90,39 +99,39 @@ export function AchievementsSection() {
       items: [
         {
           title: "Junior Web Programmer Certificate",
-          description: "Certificate of Competence in Web Programming",
+          detail:
+            "Click me for documentation",
+          description: "Certificate of Competence in Web Programming.",
           year: "2024",
           type: "Professional",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/certifications1.jpg?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1s91kYqtF__A3h93LvovnYJ2AWQAaYbZB/view?usp=sharing",
         },
         {
           title: "Microsoft Azure Data Fundamentals",
-          description: "Microsoft Certified Fundamentals (MCF) for DP-900",
+          detail:
+            "Click me for documentation",
+          description: "Microsoft Certified Fundamentals (MCF) for DP-900.",
           year: "2024",
           type: "Cloud Computing",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/certifications2.jpg?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1QNQ1TD61UfvWUvfKYvryvfa1P-4CalQs/view?usp=sharing",
         },
         {
           title: "MSIB Batch 5 Completion",
-          description: "Web Development specialization completion certificate",
+          detail:
+            "Click me for documentation",
+          description: "Web Development specialization completion certificate.",
           year: "2023",
           type: "Program",
           images: [
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
-            "/placeholder.svg?height=200&width=300",
+            "/documentation-images/certifications3.jpg?height=200&width=300",
           ],
-          link: "#",
+          link: "https://drive.google.com/file/d/1I-Kj-AYdoFI6AokwG5iyRKPicsWi9QKz/view?usp=sharing",
         },
       ],
     },
@@ -146,7 +155,7 @@ export function AchievementsSection() {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {stats.map((stat, index) => (
             <Card key={index} className="text-center hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
@@ -160,7 +169,7 @@ export function AchievementsSection() {
               </CardContent>
             </Card>
           ))}
-        </div>
+        </div> */}
 
         {/* Achievements Grid */}
         <div className="space-y-12">
@@ -186,8 +195,11 @@ export function AchievementsSection() {
                           <CardTitle className="text-lg font-bold text-gray-900">{item.title}</CardTitle>
                         </CardHeader>
                         <CardContent>
-                          <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p>
+                          <p className="text-gray-700 text-sm leading-relaxed">{item.description}</p> <small><i>{item.detail}</i></small>
                         </CardContent>
+                        {/* <CardFooter>
+                          <small><i>{item.detail}</i></small>
+                        </CardFooter> */}
                       </Card>
                     </DialogTrigger>
                     <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
@@ -199,7 +211,8 @@ export function AchievementsSection() {
                           <Badge variant="secondary">{item.type}</Badge>
                           <span className="text-gray-600">{item.year}</span>
                         </div>
-                        <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                        <p className="text-gray-700 leading-relaxed">{item.description} </p>
+                        
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                           {item.images.map((image, imgIndex) => (
@@ -216,7 +229,7 @@ export function AchievementsSection() {
                         <div className="flex justify-center">
                           <Button asChild>
                             <a href={item.link} target="_blank" rel="noopener noreferrer">
-                              View Certificate/Publication
+                              View Certificate
                             </a>
                           </Button>
                         </div>

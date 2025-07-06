@@ -1,10 +1,18 @@
 "use client"
 
-import { GraduationCap, Linkedin, Github } from "lucide-react"
+import { GraduationCap, Linkedin, Github, Mail } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Award, BookOpen, Trophy, Users } from "lucide-react"
 
 export function AboutSection() {
+  
+  const stats = [
+    { label: "International Publications", value: "3+", icon: BookOpen },
+    { label: "Projects Completed", value: "6+", icon: Users },
+    { label: "Students Taught", value: "500+", icon: Users },
+    { label: "Process Efficiency", value: "85%", icon: Trophy },
+  ]
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,6 +62,14 @@ export function AboutSection() {
               >
                 <Github className="h-6 w-6" />
               </a>
+              <a
+                href="mailto:alamatemail@anda.com"  // Ganti dengan alamat email Anda
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-colors"
+              >
+                <Mail className="h-6 w-6" />  {/* Ikon Email dari lucide-react */}
+              </a>
             </div>
           </div>
 
@@ -77,8 +93,25 @@ export function AboutSection() {
               </CardContent>
             </Card>
 
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+              {stats.map((stat, index) => (
+                <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex justify-center mb-3">
+                      <div className="p-3 bg-blue-100 rounded-full">
+                        <stat.icon className="h-8 w-8 text-blue-600" />
+                      </div>
+                    </div>
+                    <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
+                    <div className="text-sm text-gray-600">{stat.label}</div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
             {/* Profile Images */}
-            <div className="grid grid-cols-3 gap-4">
+            {/* <div className="grid grid-cols-3 gap-4">
               <div className="aspect-square bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center">
                 <img
                   src="/placeholder.svg?height=150&width=150"
@@ -100,7 +133,7 @@ export function AboutSection() {
                   className="w-full h-full object-cover rounded-lg"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
