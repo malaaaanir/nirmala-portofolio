@@ -91,7 +91,7 @@ export function ContactSection() {
   ]
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section id="contact" className="py-20 bg-gradient-to-br from-purple-50 to-indigo-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Get In Touch</h2>
@@ -101,7 +101,7 @@ export function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="border-l-4 border-l-blue-600 shadow-lg">
+            <Card className="border-l-4 border-l-purple-500 shadow-lg">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-gray-900">Contact Information</CardTitle>
               </CardHeader>
@@ -109,14 +109,14 @@ export function ContactSection() {
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center space-x-4">
                     <div className="p-3 bg-blue-100 rounded-full">
-                      <info.icon className="h-6 w-6 text-blue-600" />
+                      <info.icon className="h-6 w-6 text-pink-300" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-600">{info.label}</p>
                       {info.href ? (
                         <a
                           href={info.href}
-                          className="text-gray-900 font-medium hover:text-blue-600 transition-colors"
+                          className="text-gray-900 font-medium hover:text-purple-500 transition-colors"
                           target={info.href.startsWith("http") ? "_blank" : undefined}
                           rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
                         >
@@ -213,7 +213,7 @@ export function ContactSection() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                  className="w-full bg-gradient-to-r from-purple-500 to-pink-300 hover:from-purple-600 hover:to-pink-400"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

@@ -178,7 +178,7 @@ export function ProjectsSection() {
   const filteredProjects = activeTab === "all" ? projects : projects.filter((p) => p.category === activeTab)
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Featured Projects</h2>
@@ -216,7 +216,7 @@ export function ProjectsSection() {
                           </span>
                         </div>
                         <CardTitle className="text-xl font-bold text-gray-900 mb-2">{project.title}</CardTitle>
-                        <div className="flex items-center text-sm text-blue-600 mb-3">
+                        <div className="flex items-center text-sm text-purple-500 mb-3">
                           <User className="h-4 w-4 mr-1" />
                           {project.role}
                         </div>
@@ -247,7 +247,7 @@ export function ProjectsSection() {
                             {selectedProject.category === "team" ? "Team Project" : "Individual Project"}
                           </Badge>
                           <span className="text-gray-600">{selectedProject.year}</span>
-                          <span className="text-blue-600 flex items-center">
+                          <span className="text-purple-500 flex items-center">
                             <User className="h-4 w-4 mr-1" />
                             {selectedProject.role}
                           </span>

@@ -65,16 +65,16 @@ export function ExperienceSection() {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-blue-600 cursor-pointer"
+              className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-purple-500 cursor-pointer"
               onClick={() => toggleCard(index)}
             >
               <CardHeader className="pb-4">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
                   <div>
                     <CardTitle className="text-2xl font-bold text-gray-900 mb-2">{exp.title}</CardTitle>
-                    <p className="text-xl text-blue-600 font-semibold">{exp.company}</p>
+                    <p className="text-xl text-purple-600 font-semibold">{exp.company}</p>
                     <div className="flex items-center gap-4 mt-2">
-                      <Badge variant="default" className="bg-blue-100 text-blue-800">
+                      <Badge variant="default" className="bg-blue-100 text-purple-800">
                         {exp.type}
                       </Badge>
                       <Badge variant="outline" className="border-gray-300">
@@ -101,13 +101,13 @@ export function ExperienceSection() {
                 <CardContent className="space-y-6">
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-                      <Users className="h-5 w-5 mr-2 text-blue-600" />
+                      <Users className="h-5 w-5 mr-2 text-pink-300" />
                       Key Responsibilities
                     </h4>
                     <ul className="space-y-2 text-gray-700">
                       {exp.responsibilities.map((resp, i) => (
                         <li key={i} className="flex items-start">
-                          <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span className="w-2 h-2 bg-pink-300 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                           <span>{resp}</span>
                         </li>
                       ))}
@@ -116,13 +116,13 @@ export function ExperienceSection() {
 
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-                      <TrendingUp className="h-5 w-5 mr-2 text-green-600" />
+                      <TrendingUp className="h-5 w-5 mr-2 text-lightblue-600" />
                       Key Achievements
                     </h4>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                       {exp.achievements.map((achievement, i) => (
-                        <div key={i} className="bg-green-50 border border-green-200 rounded-lg p-3">
-                          <p className="text-sm text-green-800 font-medium">{achievement}</p>
+                        <div key={i} className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                          <p className="text-sm text-blue-800 font-medium">{achievement}</p>
                         </div>
                       ))}
                     </div>

@@ -50,7 +50,7 @@ export function AboutSection() {
                 href="https://linkedin.com/in/malaaaanir/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors"
+                className="p-3 bg-gray-800 text-pink-300 rounded-full hover:bg-gray-900 transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
@@ -58,7 +58,7 @@ export function AboutSection() {
                 href="https://github.com/malaaaanir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-colors"
+                className="p-3 bg-gray-800 text-pink-300 rounded-full hover:bg-gray-900 transition-colors"
               >
                 <Github className="h-6 w-6" />
               </a>
@@ -66,7 +66,7 @@ export function AboutSection() {
                 href="mailto:alamatemail@anda.com"  // Ganti dengan alamat email Anda
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition-colors"
+                className="p-3 bg-gray-800 text-pink-300 rounded-full hover:bg-gray-900 transition-colors"
               >
                 <Mail className="h-6 w-6" />  {/* Ikon Email dari lucide-react */}
               </a>
@@ -74,10 +74,10 @@ export function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <Card className="border-l-4 border-l-blue-600 shadow-lg">
+            <Card className="border-l-4 border-l-purple-500 shadow-lg">
               <CardContent className="p-6">
                 <div className="flex items-start space-x-4">
-                  <GraduationCap className="h-8 w-8 text-blue-600 mt-1" />
+                  <GraduationCap className="h-8 w-8 text-pink-300 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Education</h3>
                     <p className="text-gray-700 mb-1">
@@ -100,7 +100,7 @@ export function AboutSection() {
                   <CardContent className="p-6">
                     <div className="flex justify-center mb-3">
                       <div className="p-3 bg-blue-100 rounded-full">
-                        <stat.icon className="h-8 w-8 text-blue-600" />
+                        <stat.icon className="h-8 w-8 text-pink-300" />
                       </div>
                     </div>
                     <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>

@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-300 bg-clip-text text-transparent">
               Nirmala
             </h3>
             <p className="text-gray-400 mb-4">
@@ -25,7 +25,7 @@ export function Footer() {
                 href="https://linkedin.com/in/malaaaanir/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors"
+                className="p-2 bg-gray-800 text-pink-300 rounded-full hover:bg-gray-700 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -33,13 +33,13 @@ export function Footer() {
                 href="https://github.com/malaaaanir"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+                className="p-2 bg-gray-800 text-pink-300 rounded-full hover:bg-gray-700 transition-colors"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a
                 href="mailto:malaaaanir@gmail.com"
-                className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors"
+                className="p-2 bg-gray-800 text-pink-300 rounded-full hover:bg-gray-700 transition-colors"
               >
                 <Mail className="h-5 w-5" />
               </a>

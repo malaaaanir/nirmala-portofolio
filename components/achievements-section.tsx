@@ -154,29 +154,12 @@ export function AchievementsSection() {
           </p>
         </div>
 
-        {/* Stats Grid */}
-        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          {stats.map((stat, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-blue-100 rounded-full">
-                    <stat.icon className="h-8 w-8 text-blue-600" />
-                  </div>
-                </div>
-                <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
-                <div className="text-sm text-gray-600">{stat.label}</div>
-              </CardContent>
-            </Card>
-          ))}
-        </div> */}
-
         {/* Achievements Grid */}
         <div className="space-y-12">
           {achievements.map((category, index) => (
             <div key={index}>
               <div className="flex items-center mb-8">
-                <div className="p-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mr-4">
+                <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-300 rounded-full mr-4">
                   <category.icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">{category.category}</h3>

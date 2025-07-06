@@ -49,7 +49,7 @@ export function HeroSection() {
         <div className="space-y-6">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
             <span className="block text-gray-900">Hi, I'm</span>
-            <span className="block bg-gradient-to-r from-blue-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-purple-500 to-pink-300 bg-clip-text text-transparent">
               Nirmala
             </span>
           </h1>
@@ -69,7 +69,7 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-700 hover:to-blue-700 text-white px-8 py-4 text-lg rounded-full"
+              className="bg-gradient-to-r from-purple-500 to-pink-300 hover:bg-purple-700 to-purple-700 text-white px-8 py-4 text-lg rounded-full"
               onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
             >
               View My Project
@@ -78,7 +78,7 @@ export function HeroSection() {
 
             <Button
               variant="outline"size="lg"
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 text-lg rounded-full bg-transparent"
+              className="border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white px-8 py-4 text-lg rounded-full bg-transparent"
               onClick={() => window.open("https://drive.google.com/file/d/1c-lHEs1kzrb7NjrLUI5dZchEQYM5goKZ/view?usp=sharing", "_blank")}>
               Download CV
               <Download className="ml-2 h-5 w-5" />
