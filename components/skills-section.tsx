@@ -10,20 +10,98 @@ export function SkillsSection() {
   const [activeTab, setActiveTab] = useState("programming")
 
   const programmingSkills = [
-    { name: "JavaScript", icon: "🟨" },
-    { name: "PHP", icon: "🐘" },
-    { name: "HTML/CSS", icon: "📝" },
-    { name: "React JS", icon: "⚛️" },
-    { name: "Laravel", icon: "🔴" },
-    { name: "Bootstrap", icon: "🅱️" },
-    { name: "Tailwind CSS", icon: "🌊" },
-    { name: "MySQL", icon: "🗄️" },
+    { 
+      name: "HTML", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
+    },
+    { 
+      name: "CSS", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
+    },
+    { name: "Bootstrap", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" 
+    },
+    { 
+      name: "Tailwind CSS", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" 
+    },
+    { 
+      name: "JavaScript", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+    },
+    { 
+      name: "PHP", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" 
+    },
+    { name: "JQuery", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" 
+    },
+    { 
+      name: "React JS", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
+    },
+    { 
+      name: "Node JS", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
+    },
+    { 
+      name: "Next JS", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"  
+    },
+    { 
+      name: "TypeScript JSX", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" 
+    },
+    { name: "Laravel", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" 
+    },
+    { 
+      name: "MySQL", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+    },
   ]
 
   const toolsSkills = [
-    { name: "Visual Studio Code", icon: "💻" },
-    { name: "Git", icon: "📊" },
-    { name: "Microsoft Office", icon: "📊" },
+    { 
+      name: "Visual Studio Code", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"  
+    },
+    { 
+      name: "Git", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" 
+    },
+    { 
+      name: "Postman", 
+      icon: "https://cdn.simpleicons.org/postman/FF6C37"  
+    },
+    { 
+      name: "Figma", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"  
+    },
+    { 
+      name: "Adobe Illustrator", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" 
+    },
+    { 
+      name: "Canva", 
+      icon: "https://cdn.simpleicons.org/canva/00C4CC"  
+    },
+    { 
+      name: "Microsoft Office", 
+      icon: "https://cdn.simpleicons.org/microsoftoffice/D83B01" 
+    },
+    { 
+      name: "Notion", 
+      icon: "https://cdn.simpleicons.org/notion/000000"  
+    },
+    { 
+      name: "Discord", 
+      icon: "https://cdn.simpleicons.org/discord/5865F2"  
+    },
+    { 
+      name: "Vercel", 
+      icon: "https://cdn.simpleicons.org/vercel/000000"  
+    },
   ]
 
   const softSkills = [

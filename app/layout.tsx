@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   description: 'Created with v0',
   generator: 'v0.dev',
   icons: {
-    icon: '/logo-n.png', // Untuk favicon standar
-    apple: '/logo-n.png', // Untuk Apple devices
+    icon: '/logo-n.png', 
+    apple: '/logo-n.png', 
   },
 }
 
