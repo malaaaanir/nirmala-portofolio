@@ -12,7 +12,7 @@ export function SkillsSection() {
   const programmingSkills = [
     { 
       name: "HTML", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
+      icon: "skill-icons/html-5.png" 
     },
     { 
       name: "CSS", 
@@ -23,15 +23,15 @@ export function SkillsSection() {
     },
     { 
       name: "Tailwind CSS", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" 
-    },
-    { 
-      name: "JavaScript", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
+      icon: "skill-icons/tailwind.png" 
     },
     { 
       name: "PHP", 
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" 
+    },
+    { 
+      name: "JavaScript", 
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
     },
     { name: "JQuery", 
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" 
@@ -53,7 +53,7 @@ export function SkillsSection() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" 
     },
     { name: "Laravel", 
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" 
+      icon: "skill-icons/laravel.png" 
     },
     { 
       name: "MySQL", 
@@ -88,7 +88,7 @@ export function SkillsSection() {
     },
     { 
       name: "Microsoft Office", 
-      icon: "https://cdn.simpleicons.org/microsoftoffice/D83B01" 
+      icon: "skill-icons/microsoft.png" 
     },
     { 
       name: "Notion", 
@@ -123,66 +123,85 @@ export function SkillsSection() {
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 mb-8">
-            <TabsTrigger value="programming" className="text-sm">
-              Programming
-            </TabsTrigger>
-            <TabsTrigger value="tools" className="text-sm">
-              Tools
-            </TabsTrigger>
-            <TabsTrigger value="soft" className="text-sm">
-              Soft Skills
-            </TabsTrigger>
-          </TabsList>
+  <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 mb-8">
+    <TabsTrigger value="programming" className="text-sm">
+      Programming
+    </TabsTrigger>
+    <TabsTrigger value="tools" className="text-sm">
+      Tools
+    </TabsTrigger>
+    <TabsTrigger value="soft" className="text-sm">
+      Soft Skills
+    </TabsTrigger>
+  </TabsList>
 
-          <TabsContent value="programming">
-            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-              {programmingSkills.map((skill, index) => (
-                <Badge
-                  key={skill.name}
-                  variant="secondary"
-                  className="px-4 py-2 text-sm font-medium bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 cursor-default"
-                >
-                  <span className="mr-2">{skill.icon}</span>
-                  {skill.name}
-                </Badge>
-              ))}
-            </div>
-          </TabsContent>
+  {/* Programming Skills */}
+  <TabsContent value="programming">
+    <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+      {programmingSkills.map((skill) => (
+        <Badge
+          key={skill.name}
+          variant="secondary"
+          className="flex items-center px-4 py-2 text-sm font-medium bg-white border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 cursor-default"
+        >
+          <img 
+            src={skill.icon} 
+            alt={skill.name}
+            className="w-5 h-5 mr-2 object-contain"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJDNi40NzcgMiAyIDYuNDc3IDIgMTJzNC40NzcgMTAgMTAgMTAgMTAtNC40NzcgMTAtMTBTMTcuNTIzIDIgMTIgMnptMCAyYzQuNDE4IDAgOCAzLjU4MiA4IDhzLTMuNTgyIDgtOCA4LTgtMy41ODItOC04IDMuNTgyLTggOC04eiIvPjwvc3ZnPg==";
+            }}
+          />
+          {skill.name}
+        </Badge>
+      ))}
+    </div>
+  </TabsContent>
 
-          <TabsContent value="tools">
-            <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
-              {toolsSkills.map((skill, index) => (
-                <Badge
-                  key={skill.name}
-                  variant="secondary"
-                  className="px-4 py-2 text-sm font-medium bg-white border border-gray-200 hover:border-green-300 hover:bg-green-50 transition-all duration-200 cursor-default"
-                >
-                  <span className="mr-2">{skill.icon}</span>
-                  {skill.name}
-                </Badge>
-              ))}
-            </div>
-          </TabsContent>
+  {/* Tools Skills */}
+  <TabsContent value="tools">
+    <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+      {toolsSkills.map((skill) => (
+        <Badge
+          key={skill.name}
+          variant="secondary"
+          className="flex items-center px-4 py-2 text-sm font-medium bg-white border border-gray-200 hover:border-green-300 hover:bg-green-50 transition-all duration-200 cursor-default"
+        >
+          <img 
+            src={skill.icon} 
+            alt={skill.name}
+            className="w-5 h-5 mr-2 object-contain"
+            onError={(e) => {
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJDNi40NzcgMiAyIDYuNDc3IDIgMTJzNC40NzcgMTAgMTAgMTAgMTAtNC40NzcgMTAtMTBTMTcuNTIzIDIgMTIgMnptMCAyYzQuNDE4IDAgOCAzLjU4MiA4IDhzLTMuNTgyIDgtOCA4LTgtMy41ODItOC04IDMuNTgyLTggOC04eiIvPjwvc3ZnPg==";
+            }}
+          />
+          {skill.name}
+        </Badge>
+      ))}
+    </div>
+  </TabsContent>
 
-          <TabsContent value="soft">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-              {softSkills.map((skill, index) => (
-                <Card key={skill.name} className="hover:shadow-md transition-all duration-200 hover:-translate-y-1">
-                  <CardContent className="p-4">
-                    <div className="flex items-center space-x-3 mb-2">
-                      <div className="p-2 bg-blue-100 rounded-full">
-                        <skill.icon className="h-4 w-4 text-blue-600" />
-                      </div>
-                      <span className="font-semibold text-gray-900">{skill.name}</span>
-                    </div>
-                    <p className="text-gray-600 text-xs leading-relaxed">{skill.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
+  {/* Soft Skills (tetap menggunakan icon komponen) */}
+  <TabsContent value="soft">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+      {softSkills.map((skill) => (
+        <Card key={skill.name} className="hover:shadow-md transition-all duration-200 hover:-translate-y-1">
+          <CardContent className="p-4">
+            <div className="flex items-center space-x-3 mb-2">
+              <div className="p-2 bg-blue-100 rounded-full">
+                <skill.icon className="h-4 w-4 text-blue-600" />
+              </div>
+              <span className="font-semibold text-gray-900">{skill.name}</span>
             </div>
-          </TabsContent>
-        </Tabs>
+            <p className="text-gray-600 text-xs leading-relaxed">{skill.description}</p>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </TabsContent>
+</Tabs>
       </div>
     </section>
   )

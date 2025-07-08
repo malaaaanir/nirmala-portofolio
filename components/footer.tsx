@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-300 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-pink-300 to-pink-300 bg-clip-text text-transparent">
               Nirmala
             </h3>
             <p className="text-gray-400 mb-4">
